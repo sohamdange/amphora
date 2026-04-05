@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Amphora</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg:         #0a0a0a;
+      --bg2:        #151515;
+      --bg3:        #1f1f1f;
+      --border:     #2a2a2a;
+      --text:       #f5f5f5;
+      --text-muted: #a0a0a0;
+      --accent:     #ff6b35;
+      --accent-dim: rgba(255, 107, 53, 0.12);
+    }
+
+    html {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'DM Mono', monospace;
+      font-size: 15px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ── Header ── */
+    header {
+      border-bottom: 1px solid var(--border);
+      padding: 40px 24px 32px;
+      text-align: center;
+    }
+
+    .app-name {
+      font-family: 'DM Mono', monospace;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 12px;
+    }
+
+    header h1 {
+      font-family: 'Crimson Pro', serif;
+      font-size: clamp(28px, 6vw, 40px);
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 12px;
+    }
+
+    .effective-date {
+      font-size: 12px;
+      color: var(--text-muted);
+      letter-spacing: 0.04em;
+    }
+
+    /* ── Main content ── */
+    main {
+      flex: 1;
+      max-width: 720px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 48px 24px;
+    }
+
+    .intro {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent);
+      border-radius: 10px;
+      padding: 20px 24px;
+      margin-bottom: 48px;
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.75;
+    }
+
+    .intro strong {
+      color: var(--text);
+      font-weight: 500;
+    }
+
+    /* ── Sections ── */
+    section {
+      margin-bottom: 40px;
+    }
+
+    section h2 {
+      font-family: 'DM Mono', monospace;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    section h2::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    section p {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+      line-height: 1.8;
+    }
+
+    section p:last-child {
+      margin-bottom: 0;
+    }
+
+    section p strong {
+      color: var(--text);
+      font-weight: 500;
+    }
+
+    /* ── Highlight box ── */
+    .highlight {
+      background: var(--accent-dim);
+      border: 1px solid rgba(255, 107, 53, 0.25);
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin-top: 16px;
+      font-size: 13px;
+      color: var(--text);
+      line-height: 1.75;
+    }
+
+    /* ── List ── */
+    ul.policy-list {
+      list-style: none;
+      margin-top: 12px;
+    }
+
+    ul.policy-list li {
+      font-size: 14px;
+      color: var(--text-muted);
+      padding: 8px 0;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      line-height: 1.6;
+    }
+
+    ul.policy-list li:last-child {
+      border-bottom: none;
+    }
+
+    ul.policy-list li::before {
+      content: '—';
+      color: var(--accent);
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    /* ── Contact box ── */
+    .contact-box {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 20px 24px;
+    }
+
+    .contact-box p {
+      margin-bottom: 12px;
+    }
+
+    .contact-email {
+      display: inline-block;
+      font-family: 'DM Mono', monospace;
+      font-size: 13px;
+      color: var(--accent);
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 8px 14px;
+      word-break: break-all;
+    }
+
+    /* ── Footer ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 24px;
+      text-align: center;
+    }
+
+    footer p {
+      font-size: 12px;
+      color: var(--text-muted);
+      letter-spacing: 0.04em;
+    }
+
+    footer p span {
+      color: var(--accent);
+    }
+
+    /* ── Mobile ── */
+    @media (max-width: 480px) {
+      header {
+        padding: 32px 20px 24px;
+      }
+
+      main {
+        padding: 32px 20px;
+      }
+
+      .intro {
+        padding: 16px 18px;
+      }
+
+      .contact-box {
+        padding: 16px 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <p class="app-name">Amphora</p>
+    <h1>Privacy Policy</h1>
+    <p class="effective-date">Effective date: April 5, 2026</p>
+  </header>
+
+  <main>
+
+    <div class="intro">
+      <strong>Short version:</strong> Amphora collects absolutely nothing about you.
+      Your ideas stay on your device. No servers, no accounts, no tracking — ever.
+    </div>
+
+    <!-- Data Collection -->
+    <section>
+      <h2>Data Collection</h2>
+      <p>
+        Amphora does <strong>not collect any personal data</strong>, usage data, or analytics of any kind.
+        There are no crash reporters, no event trackers, no telemetry pipelines, and no third-party SDKs
+        that observe your behavior.
+      </p>
+      <p>
+        We do not know who you are, how often you use the app, which features you use, or what ideas
+        you store. That information exists only on your device and is inaccessible to us.
+      </p>
+    </section>
+
+    <!-- Data Storage -->
+    <section>
+      <h2>Data Storage</h2>
+      <p>
+        All data — your ideas, settings, and API keys — is stored exclusively in a local SQLite database
+        on your device. Nothing is written to external servers or cloud storage.
+      </p>
+      <ul class="policy-list">
+        <li>Ideas and their content are stored on-device only</li>
+        <li>App settings (theme, AI provider preferences) are stored on-device only</li>
+        <li>API keys, if entered, are stored encrypted on-device only</li>
+        <li>Uninstalling the app permanently deletes all stored data</li>
+      </ul>
+      <div class="highlight">
+        Amphora has no backend, no database server, and no cloud infrastructure.
+        There is no Amphora server that your data ever touches.
+      </div>
+    </section>
+
+    <!-- AI Features -->
+    <section>
+      <h2>AI Features</h2>
+      <p>
+        AI features in Amphora are entirely <strong>optional</strong>. The app is fully functional
+        without them. If you choose to enable AI, you supply your own API key from a supported provider
+        (Anthropic, OpenAI, Google Gemini, or Groq).
+      </p>
+      <p>
+        When you use an AI feature, the relevant idea content and your API key are sent
+        <strong>directly from your device to that AI provider's servers</strong>. This request
+        does not pass through any Amphora server or intermediary — it is a direct connection
+        between your device and the provider you chose.
+      </p>
+      <p>
+        Your use of each AI provider is governed by that provider's own privacy policy and terms of service.
+        Amphora has no control over, and no visibility into, what those providers do with the data
+        you send them.
+      </p>
+      <ul class="policy-list">
+        <li>AI is opt-in — the app works fully without it</li>
+        <li>You provide and own your own API key</li>
+        <li>API keys are stored encrypted on your device and never logged</li>
+        <li>Idea content is sent only to the provider you select, never to Amphora</li>
+        <li>You can remove your API key at any time in Settings</li>
+      </ul>
+    </section>
+
+    <!-- Third Parties -->
+    <section>
+      <h2>Third Parties</h2>
+      <p>
+        Amphora does <strong>not share any data with third parties</strong>. The only outbound
+        network requests the app can make are direct calls to an AI provider's API — and only
+        when you have explicitly enabled AI features and triggered an AI action.
+      </p>
+      <p>
+        There are no advertising networks, no analytics services, no social SDKs, and no
+        data brokers involved in this app.
+      </p>
+    </section>
+
+    <!-- Children -->
+    <section>
+      <h2>Children's Privacy</h2>
+      <p>
+        Amphora does not knowingly collect data from anyone, including children under 13.
+        Because no data is collected at all, the app poses no special risk to younger users
+        beyond the general consideration that AI providers have their own age requirements
+        for API usage.
+      </p>
+    </section>
+
+    <!-- Changes -->
+    <section>
+      <h2>Changes to This Policy</h2>
+      <p>
+        If this policy changes, the updated version will be published at the same URL with a
+        revised effective date. Because no data is collected, any changes would only reflect
+        clarifications or updates to how optional AI features work.
+      </p>
+    </section>
+
+    <!-- Contact -->
+    <section>
+      <h2>Contact</h2>
+      <div class="contact-box">
+        <p>
+          Questions about this privacy policy? Reach out to the developer directly.
+        </p>
+        <span class="contact-email">soham.perpetual@gmail.com</span>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p><span>Amphora</span> — All data stays on your device.</p>
+  </footer>
+
+</body>
+</html>
